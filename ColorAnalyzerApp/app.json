@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Color Analyzer",
+    "slug": "color-analyzer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.coloranalyzer.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos for color analysis.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to analyze colors from images."
+      }
+    },
+    "android": {
+      "backgroundColor": "#DC143C",
+      "package": "com.coloranalyzer.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "versionCode": 1
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to analyze colors from images and colorimetric strips.",
+          "cameraPermission": "The app needs access to your camera to take photos for color analysis."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "color-analyzer-app"
+      }
+    }
+  }
+}

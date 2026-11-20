@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+web-build/
+dist/
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.p8
+
+# Databases
+*.db
+*.sqlite3
+
+# macOS / IDE
+.DS_Store
+.vscode/
+.idea/
+*.orig.*
